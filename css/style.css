@@ -1,0 +1,289 @@
+body {
+  background-color: #313131;
+  font-family: "Montserrat", sans-serif;
+}
+#navbar .navbar-custom {
+  color: white;
+  background-color: #1f1e1e;
+}
+
+#navbar .navbar-brand {
+  color: blue;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+#navbar .navbar-brand2 {
+  color: white;
+  padding-right: 0px;
+  margin-right: 0px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar form input {
+  margin-left: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+  color: #111111;
+  background-color: #111111;
+}
+
+#navbar form button {
+  color: rgb(124, 124, 124);
+  background-color: #111111;
+  border: 1px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+  border-color: #cacaca;
+}
+
+#navbar form button:hover {
+  color: blue;
+}
+
+#navbar nav .navbar-nav li a i:hover {
+  color: blue;
+}
+
+#navbar nav .navbar-nav {
+  padding-right: 20px;
+}
+
+#navbar nav .dropdown-menu {
+  margin-top: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #242424;
+  border-radius: 5px;
+  width: 350px;
+}
+
+#navbar nav .dropdown-menu h5 {
+  background-color: #002196;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  border-radius: 5px;
+}
+
+#navbar nav .dropdown-menu a {
+  color: white;
+  background-color: #242424;
+  margin-bottom: 0px;
+}
+
+#navbar nav .dropdown-menu a:hover {
+  background-color: #242424;
+  -webkit-box-shadow: -1px -4px 9px -3px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: -1px -4px 9px -3px rgba(0, 0, 0, 0.49);
+  box-shadow: -1px -4px 9px -3px rgba(0, 0, 0, 0.49);
+}
+
+#navbar .navbar-nav li a {
+  color: white;
+}
+
+#navbar nav .dropdown-menu .card {
+  margin-left: 0px;
+  padding-left: 10px;
+  margin-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+#navbar nav .dropdown-menu .card-img {
+  padding-top: 0px;
+  margin-top: 15px;
+  width: 80%;
+}
+
+#navbar nav .dropdown-menu .image {
+  text-align: left;
+}
+
+#navbar nav .dropdown-menu .card-body {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+#navbar nav .dropdown-menu .card .card-body p {
+  padding-bottom: 1px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+#navbar nav .dropdown-menu .dropdown-item img {
+  display: inline-block;
+}
+
+#sidebar .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1f1e1e;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+#sidebar .sidenav .slogan img {
+  width: 100%;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+#sidebar .sidenav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar .sidenav .label {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#sidebar .sidenav .label:hover {
+  color: blue;
+  transition: color 0.5s;
+}
+
+#sidebar .sidenav .menu {
+  margin-top: 10px;
+}
+
+#sidebar .sidenav .menu2 {
+  margin-top: 10px;
+}
+
+#sidebar .sidenav li a {
+  padding: 6px 8px 6px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+#sidebar .sidenav li a:hover {
+  color: #f1f1f1;
+  border-left: 10px solid blue;
+  background-color: #464646;
+  transition: background-color 0.8s;
+  transition: border-left 0.4s;
+}
+
+#sidebar .sidenav p {
+  color: white;
+  font-size: 11px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#sidebar .sidenav hr {
+  background-color: #585858;
+}
+
+#sidebar .sidenav .links {
+    margin-top: 60px;
+}
+
+#sidebar .sidenav .links a:hover {
+    color: blue;
+    transition: color 0.8s;
+}
+
+
+#sidebar .sidenav .links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#main .main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 80px 10px;
+  width: 62%;
+  color: white;
+  border-right: 1px solid #111111;
+  display: inline-block;
+  float: left;
+}
+
+#main .main h3 {
+    margin: 5px;
+    color: white;
+  }
+
+#main .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#main .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#main .swiper-container .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: inherit
+}
+
+#sidebar-right .sidenav-right {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  margin-right: 15px;
+  background-color: #1f1e1e;
+  overflow-x: hidden;
+  float: right;
+  position: relative;
+}
+
+#sidebar-right .sidenav-right .ads img {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+
