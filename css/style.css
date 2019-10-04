@@ -29,12 +29,13 @@ body {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-right: none;
-  color: #111111;
+  border-color: blue;
+  color: white;
   background-color: #111111;
 }
 
 #navbar form button {
-  color: rgb(124, 124, 124);
+  color: blue;
   background-color: #111111;
   border: 1px solid white;
   border-top-right-radius: 20px;
@@ -42,15 +43,15 @@ body {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left: none;
-  border-color: #cacaca;
+  border-color: blue;
 }
 
 #navbar form button:hover {
-  color: blue;
+  color: white;
 }
 
-#navbar nav .navbar-nav li a i:hover {
-  color: blue;
+#navbar nav .navbar-nav li a :hover {
+  color: white;
 }
 
 #navbar nav .navbar-nav {
@@ -58,7 +59,7 @@ body {
 }
 
 #navbar nav .dropdown-menu {
-  margin-top: 8px;
+  margin-top: 7px;
   padding-top: 0;
   padding-bottom: 0;
   background-color: #242424;
@@ -156,7 +157,7 @@ body {
 }
 
 #sidebar .sidenav .label {
-  color: white;
+  color: blue;
   margin-left: 15px;
   text-decoration: none;
   font-size: 16px;
@@ -175,12 +176,29 @@ body {
   margin-top: 10px;
 }
 
+#sidebar .sidenav ul li a:active {
+  color: white;
+  border-left: 10px solid blue;
+  background-color: #464646;
+}
+
 #sidebar .sidenav li a {
   padding: 6px 8px 6px 20px;
   text-decoration: none;
   font-size: 14px;
   color: #818181;
   display: block;
+}
+
+#sidebar .sidenav li.active {
+  border-left: 10px solid blue;
+  background-color: #464646;
+  transition: background-color 0.8s;
+  transition: border-left 0.4s;
+}
+
+#sidebar .sidenav li.active a{
+  color: #f1f1f1;
 }
 
 #sidebar .sidenav li a:hover {
@@ -203,68 +221,236 @@ body {
 }
 
 #sidebar .sidenav .links {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 #sidebar .sidenav .links a:hover {
-    color: blue;
-    transition: color 0.8s;
+  color: blue;
+  transition: color 0.8s;
 }
 
-
 #sidebar .sidenav .links a {
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-    font-size: 12px;
-    margin-right: 10px;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 12px;
+  margin-right: 10px;
 }
 
 #main .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 210px; /* Same as the width of the sidenav */
+  margin-top: 70px;
   font-size: 18px; /* Increased text to enable scrolling */
-  padding: 80px 10px;
+  padding: 10px 10px 10px 10px;
   width: 62%;
   color: white;
-  border-right: 1px solid #111111;
   display: inline-block;
+  background-color: #111111;
   float: left;
 }
 
 #main .main h3 {
-    margin: 5px;
-    color: white;
-  }
+  margin: 5px;
+  color: white;
+}
 
 #main .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#main .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#main .swiper-container .swiper-slide img {
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-size: inherit;
+}
+
+#main .trending h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  width: 125px;
+  text-align: center;
+  border-bottom: 3px solid;
+  border-color: blue;
+}
+
+#main .trending img {
+    width: 85%;
+    height: 180px;
+    background-position: center;
+    background-size: inherit;
+}
+
+#main .trending .trend-slide {
+  margin-left: 45px;
+}
+
+#main .trending .slick-prev {
+    background: none;
+    margin: 70px 0px 0px 0px;
+    padding: 0;
+    width: 1.5%;
+    height: 3.5%;
+    border: none;
+    position: absolute;
+}
+#main .trending .slick-prev img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+#main .trending .slick-next {
+    background: none;
+    margin: 70px 0px 0px 0px;
+    padding: 0;
+    width: 1.5%;
+    height: 3.5%;
+    border: none;
+    position: absolute;
+}
+#main .trending .slick-next img {
     width: 100%;
     height: 100%;
 }
 
-#main .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+#main .playlist h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  width: 172px;
+  border-bottom: 3px solid;
+  border-color: blue;
 }
 
-#main .swiper-container .swiper-slide img {
-    width: 100%;
-    height: 400px;
-    background-position: center;
-    background-size: inherit
+#main .playlist #myBtnContainer {
+  text-align: center;
+}
+
+#main .playlist .container {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#main .filterDiv {
+  float: left;
+  width: 155px;
+  text-align: center;
+  margin: 30px 10px 10px 2px;
+  display: none;
+}
+
+#main .filterDiv:hover {
+  -ms-transform: scale(1.04); /* IE 9 */
+  -webkit-transform: scale(1.04); /* Safari 3-8 */
+  transform: scale(1.04); 
+  transition: transform 0.8s;
+  border-radius: 5px;
+}
+
+#main .filterDiv .card {
+  background: none;
+  border: none;
+  text-align: left;
+}
+
+#main .filterDiv .card img {
+  height: 150px;
+}
+
+#main .filterDiv .card-body {
+  padding: 10px 0px 0px 2px;
+  margin: 0;
+}
+
+#main .filterDiv .card-title {
+  margin: 0px 0px 5px 0px;
+  font-size: 14px;
+}
+
+#main .filterDiv .card-text {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+#main .show {
+  display: block;
+}
+
+#main .results {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#main .playlist .btn.active {
+  background-color: #002196;
+  color: white;
+}
+
+#main .playlist .btn {
+  background-color: #002196;
+  margin: 0px 2px 0px 2px;
+  color: white;
+}
+
+#main .artists h3{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  width: 150px;
+  border-bottom: 3px solid;
+  border-color: blue;
+}
+
+#main .artists .card{
+  background: none;
+  border:none;
+} 
+
+#main .artists .card img{
+  border-radius: 100px;
+  width: 80%;
+  margin-left: 20px;
+}
+
+#main .artists .card img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  transform: rotate(360deg);
+  transition: transform 3s;
+  border-radius: 100px;
+  /* .artists .card-title[
+    display: none;
+    ]; */
+}
+
+#main .artists .card .card-title{
+  text-align: center;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
 }
 
 #sidebar-right .sidenav-right {
@@ -283,7 +469,10 @@ body {
 }
 
 #sidebar-right .sidenav-right .ads img {
-    width: 100%;
-    padding: 10px 10px 0px 10px;
+  width: 100%;
+  padding: 10px 10px 0px 10px;
 }
 
+
+
+/***********************************************************/

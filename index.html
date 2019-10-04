@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <title>BlueTonic</title>
@@ -38,7 +39,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: blue;">
                             <i class="far fa-bell fa-lg"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -51,7 +52,7 @@
                                     <div class="col-md-9">
                                         <div class="card-body">
                                             <strong>
-                                                <p class="card-title">New Release</p>
+                                                <p class="card-title" style="font-size: 13px;">New Release</p>
                                             </strong>
                                             <p class="card-text">Ariana Grande & David Guetta<br>Play Now!</p>
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins
@@ -68,7 +69,7 @@
                                     <div class="col-md-9">
                                         <div class="card-body">
                                             <strong>
-                                                <p class="card-title">New Release</p>
+                                                <p class="card-title" style="font-size: 13px;">New Release</p>
                                             </strong>
                                             <p class="card-text">Shawn Mendes<br>Play Now!</p>
                                             <p class="card-text"><small class="text-muted">Last updated ١٠ mins
@@ -80,7 +81,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-cogs fa-lg"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-cogs fa-lg" style="color: blue;"></i></a>
                     </li>
                 </ul>
             </div>
@@ -94,18 +95,18 @@
             </div>
             <strong><a class="label dia-close" href="#">Menu</a></strong>
             <ul class="menu">
-                <li><a href="#about"><i class="fas fa-search"> Disvover</i></a></li>
-                <li><a href="#services"><i class="fas fa-music"> Songs</i></a></li>
-                <li><a href="#clients"><i class="fas fa-compact-disc"> Albums</i></a></li>
-                <li><a href="#about"><i class="far fa-user"> Artists</i></a></li>
-                <li><a href="#services"><i class="fas fa-broadcast-tower"> Radio</i></a></li>
+                <li class="active"><a href="#about"><i class="fas fa-search">&nbsp;&nbsp;Disvover</i></a></li>
+                <li><a href="#services"><i class="fas fa-music">&nbsp;&nbsp;Songs</i></a></li>
+                <li><a href="#clients"><i class="fas fa-compact-disc">&nbsp;&nbsp;Albums</i></a></li>
+                <li><a href="#about"><i class="far fa-user">&nbsp;&nbsp;Artists</i></a></li>
+                <li><a href="#services"><i class="fas fa-broadcast-tower">&nbsp;&nbsp;Radio</i></a></li>
             </ul>
             <hr>
             <strong><a class="label dia-close" href="#">Sub Menu</a></strong>
             <ul class="menu2">
-                <li><a href="#about"><i class="fas fa-heart"> Favorites</i></a></li>
-                <li><a href="#services"><i class="fas fa-history"> Play History</i></a></li>
-                <li><a href="#about"><i class="fas fa-download"> Downloaded Traks</i></a></li>
+                <li><a href="#about"><i class="fas fa-heart">&nbsp;&nbsp;Favorites</i></a></li>
+                <li><a href="#services"><i class="fas fa-history">&nbsp;&nbsp;Play History</i></a></li>
+                <li><a href="#about"><i class="fas fa-download">&nbsp;&nbsp;Download Tracks</i></a></li>
             </ul>
             <div class="links">
                 <a href="#">About</a>
@@ -119,29 +120,238 @@
     </section>
 
     <section id="main">
-    <div class="main">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider6.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider7.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="imgs/slider9.jpg" alt=""></div>
+        <div class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="imgs/slider9.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="container">
+                    <button type="button" class="slick-prev"><img src="imgs/arrow.png" alt=""></button>
+                    <div class="trend-slide" style="width: 92%; display: inline-block;">
+                        <div class="trend"><img src="imgs/trend1.jpg" alt=""></div>
+                        <div class="trend"><img src="imgs/trend2.png" alt=""></div>
+                        <div class="trend"><img src="imgs/trend3.jpg" alt=""></div>
+                        <div class="trend"><img src="imgs/trend4.jpg" alt=""></div>
+                        <div class="trend"><img src="imgs/noti1.jpg" alt=""></div>
+                        <div class="trend"><img src="imgs/noti2.jpg" alt=""></div>
+                    </div>
+                    <button type="button" class="slick-next"><img src="imgs/arrow.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <h3>Top Playlists</h3>
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                    <button class="btn" onclick="filterSelection('Worldwide')">Worldwide</button>
+                    <button class="btn" onclick="filterSelection('Egypt')">Egypt</button>
+                </div>
+
+                <div class="container">
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Top BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Egypt">
+                        <div class="card">
+                            <img src="imgs/play3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Top Egypt</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">POP BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Egypt">
+                        <div class="card">
+                            <img src="imgs/play5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">POP Egypt</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">New BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Egypt">
+                        <div class="card">
+                            <img src="imgs/play7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">New Egypt</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Daily BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Egypt">
+                        <div class="card">
+                            <img src="imgs/play10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Daily Egypt</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play11.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Rock BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Dance BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play13.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">R&B BlueTonic</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterDiv Worldwide">
+                        <div class="card">
+                            <img src="imgs/play15.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Hip Hop</h6>
+                                <p class="card-text">Some quick example text to build on the card title.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artists">
+                <h3>Top Artists</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jason Derulo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sherine</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/noti1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kisha</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amr Diab</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                                <div class="card">
+                                    <img src="imgs/trend5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ariana Grande</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-md-3">
+                                <div class="card">
+                                    <img src="imgs/trend2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tamer Hosny</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="imgs/trend6.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Taylor Swift</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="imgs/trend7.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dua Lipa</h5>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="sidebar-right">
         <div class="sidenav-right">
             <div class="ads">
                 <img src="imgs/poster1.jpg" alt="">
             </div>
-            <div class="ads" style="margin-bottom: 40px;">
+            <div class="ads" style="margin-bottom: 10px;">
                 <img src="imgs/poster2.jpg" alt="">
             </div>
         </div>
@@ -160,6 +370,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
