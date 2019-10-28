@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 
-    <title>BlueTonic</title>
+    <title>Artists</title>
 
 </head>
 
@@ -94,18 +94,18 @@
             </div>
             <strong><a class="label dia-close" href="#">Menu</a></strong>
             <ul class="menu">
-                <li class="active"><a href="index.html"><i class="fas fa-search">&nbsp;&nbsp;Disvover</i></a></li>
-                <li><a href="play.html"><i class="fas fa-music">&nbsp;&nbsp;Songs</i></a></li>
-                <li><a href="#"><i class="fas fa-compact-disc">&nbsp;&nbsp;Playlists</i></a></li>
-                <li><a href="artists.html"><i class="far fa-user">&nbsp;&nbsp;Artists</i></a></li>
+                <li><a href="index.html"><i class="fas fa-search">&nbsp;&nbsp;Disvover</i></a></li>
+                <li><a href="#"><i class="fas fa-music">&nbsp;&nbsp;Songs</i></a></li>
+                <li><a href="#"><i class="fas fa-compact-disc">&nbsp;&nbsp;Albums</i></a></li>
+                <li class="active"><a href="artists.html"><i class="far fa-user">&nbsp;&nbsp;Artists</i></a></li>
                 <li><a href="radio.html"><i class="fas fa-broadcast-tower">&nbsp;&nbsp;Radio</i></a></li>
             </ul>
             <hr>
             <strong><a class="label dia-close" href="#">Sub Menu</a></strong>
             <ul class="menu2">
-                <li><a href="#"><i class="fas fa-heart">&nbsp;&nbsp;Favorites</i></a></li>
-                <li><a href="#"><i class="fas fa-history">&nbsp;&nbsp;Play History</i></a></li>
-                <li><a href="#"><i class="fas fa-download">&nbsp;&nbsp;Download Tracks</i></a></li>
+                <li><a href="#about"><i class="fas fa-heart">&nbsp;&nbsp;Favorites</i></a></li>
+                <li><a href="#services"><i class="fas fa-history">&nbsp;&nbsp;Play History</i></a></li>
+                <li><a href="#about"><i class="fas fa-download">&nbsp;&nbsp;Download Tracks</i></a></li>
             </ul>
             <div class="links">
                 <a href="#">About</a>
@@ -120,159 +120,77 @@
 
     <section id="main">
         <div class="main">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider4.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider6.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider7.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="imgs/slider9.jpg" alt=""></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="trending">
-                <h3>Trending</h3>
-                <div class="container">
-                    <button type="button" class="slick-prev"><img src="imgs/arrow.png" alt=""></button>
-                    <div class="trend-slide" style="width: 92%; display: inline-block;">
-                        <div class="trend"><img src="imgs/trend1.jpg" alt=""></div>
-                        <div class="trend"><img src="imgs/trend2.png" alt=""></div>
-                        <div class="trend"><img src="imgs/trend3.jpg" alt=""></div>
-                        <div class="trend"><img src="imgs/trend4.jpg" alt=""></div>
-                        <div class="trend"><img src="imgs/noti1.jpg" alt=""></div>
-                        <div class="trend"><img src="imgs/noti2.jpg" alt=""></div>
-                    </div>
-                    <button type="button" class="slick-next"><img src="imgs/arrow.png" alt=""></button>
-                </div>
-            </div>
-
-            <div class="playlist">
-                <h3>Top Playlists</h3>
-
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')">Show All</button>
-                    <button class="btn" onclick="filterSelection('Worldwide')">Worldwide</button>
-                    <button class="btn" onclick="filterSelection('Egypt')">Egypt</button>
-                </div>
-
-                <div class="container">
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Top BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Egypt">
-                        <div class="card">
-                            <img src="imgs/play3.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Top Egypt</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">POP BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Egypt">
-                        <div class="card">
-                            <img src="imgs/play5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">POP Egypt</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play8.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">New BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Egypt">
-                        <div class="card">
-                            <img src="imgs/play7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">New Egypt</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play9.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Daily BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Egypt">
-                        <div class="card">
-                            <img src="imgs/play10.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Daily Egypt</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play11.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Rock BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play12.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Dance BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play13.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">R&B BlueTonic</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filterDiv Worldwide">
-                        <div class="card">
-                            <img src="imgs/play15.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title">Hip Hop</h6>
-                                <p class="card-text">Some quick example text to build on the card title.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="artists">
                 <h3>Top Artists</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jason Derulo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sherine</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/noti1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kisha</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amr Diab</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ariana Grande</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tamer Hosny</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Taylor Swift</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="imgs/trend7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dua Lipa</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>All Artists</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">

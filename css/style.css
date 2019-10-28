@@ -2,13 +2,14 @@ body {
   background-color: #313131;
   font-family: "Montserrat", sans-serif;
 }
+
 #navbar .navbar-custom {
   color: white;
   background-color: #1f1e1e;
 }
 
 #navbar .navbar-brand {
-  color: blue;
+  color: linear-gradient(220deg, rgb(0, 0, 107) 32.6%, #00899b 90.6%);;
   padding-right: 0px;
   margin-right: 0px;
   margin-left: 20px;
@@ -68,7 +69,7 @@ body {
 }
 
 #navbar nav .dropdown-menu h5 {
-  background-color: #002196;
+  background: linear-gradient(220deg, rgb(0, 0, 107) 32.6%, #00899b 90.6%);
   color: white;
   text-align: center;
   margin: 0;
@@ -157,7 +158,7 @@ body {
 }
 
 #sidebar .sidenav .label {
-  color: blue;
+  color: linear-gradient(220deg, rgb(0, 0, 107) 32.6%, #00899b 90.6%);
   margin-left: 15px;
   text-decoration: none;
   font-size: 16px;
